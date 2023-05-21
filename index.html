@@ -45,6 +45,19 @@
 
 
   </section>
+
+  <div class="modal not-shown" id="modal">
+    <h1 style="color: red;">Atenção!</h1>
+    <p id="modal-message"></p>
+    <button onclick="closeModal()">Entendi</button>
+  </div>
+
+  <div class="modal not-shown" id="modal-with-options">
+    <h1 style="color: red;">Atenção!</h1>
+    <p id="modal-with-options-message"></p>
+    <button onclick="yesPressed()">Sim</button>
+    <button onclick="noPressed()">Não</button>
+  </div>
 </body>
 
 <script src="./public/js/app.js"></script>

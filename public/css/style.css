@@ -110,3 +110,35 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
+.modal {
+  width: 500px;
+  height: 200px;
+  border-radius: 7px;
+  margin: auto;
+  font-family: Montserrat Medium;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow:
+  0px 0px 2.2px rgba(0, 0, 0, 0.084),
+  0px 0px 5.3px rgba(0, 0, 0, 0.121),
+  0px 0px 10px rgba(0, 0, 0, 0.15),
+  0px 0px 17.9px rgba(0, 0, 0, 0.179),
+  0px 0px 33.4px rgba(0, 0, 0, 0.216),
+  0px 0px 80px rgba(0, 0, 0, 0.3)
+;
+}
+
+.modal button {
+  width: 145px;
+  height: 40px;
+  font-family: Roboto Medium;
+  font-size: 25px;
+  color: white;
+  background-color: #50B6CF;
+  border: none;
+  border-radius: 7px;
+  margin-left: 10px;
+  cursor: pointer;
+}
