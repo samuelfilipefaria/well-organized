@@ -1,3 +1,5 @@
+tasks = [];
+
 function showAddTaskForm() {
   getElem("add-task-option").classList.toggle("not-shown");
   getElem("add-task-form").classList.toggle("not-shown");
@@ -7,7 +9,19 @@ function createNewTask() {
   const taskDescription = getElem("task-description-input").value;
   const taskColor = getElem("selected-color-code").value;
 
-  if(isNewTaskInvalid(taskDescription)) return;
+  if(isNewTaskInvalid(taskDescription)) {
+    alert("Dados inválidos");
+    return;
+  }
+
+  const newTask = {
+    description: taskDescription,
+    color: taskColor
+  };
+
+  tasks.push(newTask);
+
+  window.localStorage.setItem("well_organized_tasks", JSON.stringify(tasks));
 
   resetAddTaskForm();
 }
