@@ -11,11 +11,41 @@
 
 <header class="header">
   <img src="./public/assets/imgs/well-organized-logo.png" alt="Well Organized Logo">
-  <a href="#">A fazer</a> |
+  <a href="/">A fazer</a> |
   <a href="#">Arquivadas</a>
 </header>
 
 <body>
+  <section class="task-addition-section">
 
+
+    <div id="add-task-option" onclick="showAddTaskForm()">
+      <button class="circle-add-button">
+        <i class="fa fa-plus"></i>
+      </button>
+      <span class="text-add">Adicionar Tarefa</span>
+    </div>
+
+    <div class="not-shown" id="add-task-form">
+      Descrição
+      <input class="task-description-input" type="text" id="task-description-input">
+
+      Cor
+      <div class="task-color-option" onclick="selectColor(this)" style="background-color: #daf5fa; margin-left: 15px;"></div>
+      <div class="task-color-option" onclick="selectColor(this)" style="background-color: #d1fecb;"></div>
+      <div class="task-color-option" onclick="selectColor(this)" style="background-color: #f6d0f6;"></div>
+      <div class="task-color-option" onclick="selectColor(this)" style="background-color: #dcd0f3;"></div>
+      <div class="task-color-option" onclick="selectColor(this)" style="background-color: #fcfccb;"></div>
+      <div class="task-color-option" onclick="selectColor(this)" style="background-color: #fbd4b4;"></div>
+      <div class="task-color-option" onclick="selectColor(this)" style="background-color: #ffffff; margin-right: 15px;"></div>
+      <input class="not-shown" type="text" id="selected-color-code">
+
+      <button class="create-task-button" onclick="createNewTask()">Adicionar</button>
+    </div>
+
+
+  </section>
 </body>
+
+<script src="./public/js/app.js"></script>
 </html>
