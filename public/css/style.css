@@ -1,21 +1,33 @@
 @font-face {
-  font-family: Montserrat Regular;
+  font-family: Montserrat-Regular;
   src: url(../assets/fonts/Montserrat/Montserrat-Regular.ttf)
 }
 
 @font-face {
-  font-family: Montserrat Medium;
+  font-family: Montserrat-Medium;
   src: url(../assets/fonts/Montserrat/Montserrat-Medium.ttf)
 }
 
 @font-face {
-  font-family: Roboto Medium;
+  font-family: Roboto-Medium;
   src: url(../assets/fonts/Roboto/Roboto-Medium.ttf)
 }
 
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf)
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf)
+}
+
+
+
 .header {
   height: 100px;
-  font-family: Montserrat Regular;
+  font-family: Montserrat-Regular;
   font-size: 24px;
 }
 
@@ -31,9 +43,11 @@
   margin-left: 20px;
 }
 
+
+
 .task-addition-section {
   height: 100px;
-  font-family: Montserrat Medium;
+  font-family: Montserrat-Medium;
   font-size: 18px;
 }
 
@@ -64,10 +78,6 @@
 
 #add-task-option {
   cursor: pointer;
-}
-
-.not-shown {
-  display: none;
 }
 
 .task-description-input {
@@ -101,7 +111,7 @@
 .create-task-button {
   width: 145px;
   height: 40px;
-  font-family: Roboto Medium;
+  font-family: Roboto-Medium;
   font-size: 25px;
   color: white;
   background-color: #50B6CF;
@@ -111,29 +121,59 @@
   cursor: pointer;
 }
 
+
+
+.task {
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.task-header {
+  font-family: Roboto-Regular;
+  font-size: 10px;
+}
+
+.task-body {
+  font-family: OpenSans-SemiBold;
+  font-size: 20px;
+}
+
+
 .modal {
-  width: 500px;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: 700px;
   height: 200px;
   border-radius: 7px;
-  margin: auto;
-  font-family: Montserrat Medium;
+  top: 50%;
+  margin-top: -180px;
+  left: 50%;
+  margin-left: -350px;
+  font-family: Montserrat-Medium;
   font-size: 18px;
   text-align: center;
   padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
   box-shadow:
   0px 0px 2.2px rgba(0, 0, 0, 0.084),
   0px 0px 5.3px rgba(0, 0, 0, 0.121),
   0px 0px 10px rgba(0, 0, 0, 0.15),
   0px 0px 17.9px rgba(0, 0, 0, 0.179),
   0px 0px 33.4px rgba(0, 0, 0, 0.216),
-  0px 0px 80px rgba(0, 0, 0, 0.3)
-;
+  0px 0px 80px rgba(0, 0, 0, 0.3);
 }
 
 .modal button {
   width: 145px;
   height: 40px;
-  font-family: Roboto Medium;
+  font-family: Roboto-Medium;
   font-size: 25px;
   color: white;
   background-color: #50B6CF;
@@ -141,4 +181,10 @@
   border-radius: 7px;
   margin-left: 10px;
   cursor: pointer;
+}
+
+
+
+.not-shown {
+  display: none;
 }
