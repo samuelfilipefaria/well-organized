@@ -7,11 +7,12 @@
   <link rel="icon" href="./public/assets/imgs/favicon.ico">
   <link rel="stylesheet" href="./public/css/style.css">
   <link rel="stylesheet" href="./public/css/font-awesome-all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <header class="header">
   <img src="./public/assets/imgs/well-organized-logo.png" alt="Well Organized Logo">
-  <a href="/">A fazer</a> |
+  <a href="/">A fazer</a> &nbsp;|&nbsp;
   <a href="#">Arquivadas</a>
 </header>
 
@@ -26,7 +27,7 @@
       <span class="text-add">Adicionar Tarefa</span>
     </div>
 
-    <div class="not-shown" id="add-task-form">
+    <div class="not-shown animate__animated animate__fadeIn" id="add-task-form">
       Descrição
       <input class="task-description-input" type="text" id="task-description-input">
 
@@ -46,13 +47,17 @@
 
   </section>
 
-  <div class="modal not-shown" id="modal">
+  <main id="task-list">
+    
+  </main>
+
+  <div class="modal not-shown animate__animated animate__pulse" id="modal">
     <h1 style="color: red;">Atenção!</h1>
     <p id="modal-message"></p>
     <button onclick="closeModal()">Entendi</button>
   </div>
 
-  <div class="modal not-shown" id="modal-with-options">
+  <div class="modal not-shown animate__animated animate__pulse" id="modal-with-options">
     <h1 style="color: red;">Atenção!</h1>
     <p id="modal-with-options-message"></p>
     <button onclick="yesPressed()">Sim</button>
