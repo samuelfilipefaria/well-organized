@@ -1,0 +1,39 @@
+@import url(import-fonts.css);
+
+.task-addition-section {
+  height: 100px;
+  font-family: Montserrat-Medium;
+  font-size: 18px;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.circle-add-button {
+  height: 58px;
+  width: 58px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 50%;
+  background-color: #2196F3;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.circle-add-button i {
+  margin-top: -5px;
+}
+
+.text-add {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 2px;
+  color: #2196F3;
+  font-weight: bold;
+}
+
+#add-task-option {
+  cursor: pointer;
+}

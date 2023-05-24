@@ -1,0 +1,19 @@
+@import url(import-fonts.css);
+
+.header {
+  height: 100px;
+  font-family: Montserrat-Regular;
+  font-size: 24px;
+}
+
+.header a:link, a:visited {
+  color: black;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.header img {
+  vertical-align: middle;
+  margin-right: 100px;
+  margin-left: 20px;
+}

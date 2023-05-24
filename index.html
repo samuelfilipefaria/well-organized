@@ -5,15 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./public/assets/imgs/favicon.ico">
+
+  <link rel="stylesheet" href="./public/css/header.css">
+  <link rel="stylesheet" href="./public/css/task-addition-section.css">
+  <link rel="stylesheet" href="./public/css/task-addition-form.css">
+  <link rel="stylesheet" href="./public/css/tasks.css">
   <link rel="stylesheet" href="./public/css/style.css">
-  <link rel="stylesheet" href="./public/css/font-awesome-all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="./public/css/animate.min.css">
+  <link rel="stylesheet" href="./public/css/spectre-icons.min.css">
 </head>
 
 <header class="header">
   <img src="./public/assets/imgs/well-organized-logo.png" alt="Well Organized Logo">
-  <a href="/">A fazer</a> &nbsp;|&nbsp;
-  <a href="#">Arquivadas</a>
+  <a href="./index.html">A fazer</a> &nbsp;|&nbsp;
+  <a href="./arquivadas.html">Arquivadas</a>
 </header>
 
 <body>
@@ -22,7 +27,7 @@
 
     <div id="add-task-option" onclick="showAddTaskForm()">
       <button class="circle-add-button">
-        <i class="fa fa-plus"></i>
+        <i class="icon icon-plus"></i>
       </button>
       <span class="text-add">Adicionar Tarefa</span>
     </div>
@@ -41,27 +46,19 @@
       <div class="task-color-option" onclick="selectColor(this)" style="background-color: #ffffff; margin-right: 15px;"></div>
       <input class="not-shown" type="text" id="selected-color-code">
 
-      <button class="create-task-button" onclick="createNewTask()">Adicionar</button>
+      <button class="create-task-button" onclick="validateNewTask()">Adicionar</button>
     </div>
 
 
   </section>
 
-  <main id="task-list">
-    
-  </main>
+  <main id="task-list"></main>
+  <main class="not-shown" id="task-list-archived"></main>
 
-  <div class="modal not-shown animate__animated animate__pulse" id="modal">
+  <div class="modal not-shown animate__animated animate__bounceIn" id="modal">
     <h1 style="color: red;">Atenção!</h1>
     <p id="modal-message"></p>
     <button onclick="closeModal()">Entendi</button>
-  </div>
-
-  <div class="modal not-shown animate__animated animate__pulse" id="modal-with-options">
-    <h1 style="color: red;">Atenção!</h1>
-    <p id="modal-with-options-message"></p>
-    <button onclick="yesPressed()">Sim</button>
-    <button onclick="noPressed()">Não</button>
   </div>
 </body>
 

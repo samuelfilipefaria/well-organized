@@ -1,0 +1,42 @@
+@import url(import-fonts.css);
+
+.task-description-input {
+  width: 490px;
+  height: 40px;
+  border-style: solid;
+  border-color: #50B6CF;
+  border-radius: 7px;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.task-color-option {
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 7px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.task-color-option-selected {
+  box-shadow: 3px 3px 3px;
+}
+
+.create-task-button {
+  width: 145px;
+  height: 40px;
+  font-family: Roboto-Medium;
+  font-size: 25px;
+  color: white;
+  background-color: #50B6CF;
+  border: none;
+  border-radius: 7px;
+  margin-left: 10px;
+  cursor: pointer;
+}

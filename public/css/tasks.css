@@ -1,0 +1,70 @@
+@import url(import-fonts.css);
+
+.task-card {
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.task-card-header-not-done, .task-card-header-done {
+  font-family: Roboto-Regular;
+  font-size: 10px;
+}
+
+.task-card-header-not-done {
+  background-color: #FFA4A3;
+  color: #E42C28;
+}
+
+.task-card-header-not-done:after {
+  content: "Não concluída";
+  vertical-align: middle;
+}
+
+.task-card-header-done {
+  background-color: #B8FF99;
+  color: #2B5A07;
+}
+
+.task-card-header-done:after {
+  content: "Concluída";
+  vertical-align: middle;
+}
+
+.task-card-header-checkbox {
+  vertical-align: middle;
+}
+
+.task-card-body {
+  font-family: OpenSans-SemiBold;
+  font-size: 20px;
+  height: 100px;
+}
+
+.task-card-footer-able, .task-card-footer-disable {
+  height: 30px;
+  width: 100%;
+  margin-top: 30px;
+  text-align: right;
+}
+
+.task-card-footer-able {
+  color: #000000;
+}
+
+.task-card-footer-disable {
+  color: #999999;
+}
+
+.task-card-footer-able i {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.task-card-footer-able,.task-card-footer-disable i {
+  margin-right: 10px;
+}
